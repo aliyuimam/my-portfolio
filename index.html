@@ -6,92 +6,80 @@
   <title>Aliyu Imam - Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body {
-      padding-top: 80px; /* Space for the fixed header */
-    }
-    .mobile-menu {
-      transition: max-height 0.3s ease-in-out;
-      overflow: hidden;
-    }/* CSS for customizing the image */
-.profile-image-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 20px;
-}
 
-.profile-image {
-    width: 200px; /* Adjust size as needed */
-    height: 200px;
-    border-radius: 50%; /* Makes the image circular */
-    border: 4px solid #4a90e2; /* Customize border color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow */
-    object-fit: cover; /* Ensures image fits well in circle */
-}
-
-.profile-name {
-    margin-top: 10px;
-    font-size: 1.2em;
-    color: #333;
-    font-weight: bold;
-}
 
   </style>
 </head>
-<body class="bg-gray-50 font-sans">
-
-<!-- Header -->
-<header class="text-white shadow-lg fixed w-full top-0 z-50" style="background: rgb(32,45,121); color: rgb(124,231,190)">
-  <div class="container mx-auto p-6 flex justify-between items-center">
-    <h1 class="text-3xl font-bold">Abdullahi Aliyu Imam</h1>
-    <nav class="hidden md:flex space-x-6">
-      <a href="#about" class=" hover:text-white">About</a>
-      <a href="#skills" class=" hover:text-white">Skills</a>
-      <a href="#projects" class=" hover:text-white">Projects</a>
-      <a href="#contact" class=" hover:text-white">Contact</a>
-    </nav>
-    <!-- Hamburger Icon for Mobile -->
-    <button id="menu-btn" class="md:hidden flex items-center  focus:outline-none">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-      </svg>
-    </button>
-  </div>
-</header>
-
-<!-- Mobile Menu -->
-<nav id="mobile-menu" class="mobile-menu md:hidden max-h-0">
-  <ul class="flex flex-col items-center space-y-4 p-4">
-    <li><a href="#about" class=" hover:text-white">About</a></li>
-    <li><a href="#skills" class=" hover:text-white">Skills</a></li>
-    <li><a href="#projects" class=" hover:text-white">Projects</a></li>
-    <li><a href="#contact" class=" hover:text-white">Contact</a></li>
-  </ul>
-</nav>
+<body class="bg-gray-50  font-sans">
 
 <!-- Hero Section -->
-<section class="relative text-white py-80 text-center" style="background-image: url('https://media.istockphoto.com/id/1668247346/photo/vector-abstract-particle-line-science-and-technology-poster-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=LmRP30qWT1f1HGoNvY2jwG71d3CzPdu_OtDHrS_vi8w='); background-size: cover;">
-  <div class="bg-black bg-opacity-50 absolute inset-0"></div>
-  <div class="relative container mx-auto px-4 z-10">
-    <h2 class="text-4xl font-bold">I Create & Design</h2>
-    <p class="text-lg mt-4">Web Developer | Software Developer | Graphics Designer</p>
-    <a href="#projects" class="mt-8 inline-block bg-blue-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-blue-600">View My Work</a>
-  </div>
-</section>
+<div class="w-full h-full bg-black text-white">
+    <header class="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg">
+     <label for="menu-toggle" class="pointer-cursor md:hidden block">
+            <svg class="fill-current text-gray-200" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+            <title>menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+            </svg>
+            </label>
+        <div class="bg-black pl-2 ">
+          <h1 class="text-2xl font-semibold font-serif"> MY PORTFOLIO</h1>
+        </div>
+
+       
+        <input class="hidden" type="checkbox" id="menu-toggle" />
+
+        <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+            <nav>
+                <ul class="md:flex items-center justify-between text-base text-gray-100 dark:text-gray-600 pt-4 md:pt-0">
+                    <li><a class="md:p-4 py-3 px-0 block text-rose-500" href="#">Home</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block" href="#">About Me</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block" href="#">Education</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block" href="#">Experience</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block" href="#">Projects</a></li>
+                    <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div
+        class="h-screen w-full mx-auto py-20 xl:px-16 xs:px-8 flex md:flex-row xs:flex-col gap-4 justify-center items-center pb-515 pt-4">
+        <div class="w-full">
+            <img class="rounded-full md:max-w-[70%] sm:max-w-[50%] xs:max-w-[60%] mx-auto" src="img/01.png" alt="My Image" />
+        </div>
+        <div class="w-full flex flex-col justify-center gap-4 text-white dark:text-white md:mt-0 sm:mt-8 xs:mt-4">
+            <h1 class="text-4xl font-semibold font-serif">Hello, My name is Abdullahi Aliyu Imam</h1>
+            <h3 class="capitalize text-rose-400">i'm <span class="typing text-green-500 dark:text-green-700">fullstack developer</span></h3>
+            <p>Experienced full-stack web developer with 4+ years of expertise in PHP, Javascript, React JS,
+                Graphics Design, Tailwind CSS and some Flutter experience.</p>
+            <div class="sm:mt-4 xs:mt-2">
+                <button class="px-6 py-1 bg-green-500 text-white hover:text-blue-600 hover:bg-green-900 rounded-sm">Get In Touch</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+<script>
+    var typed = new Typed('.typing', {
+    strings: ['', 'FullStack Developer,', 'Frontend Developer,', 'Backend Developer,', 'Graphic Designer.'],
+    typeSpeed: 200,
+    BackSpeed: 60,
+    loop: true
+})
+</script>
 
 <!-- About Me Section -->
-<!-- About Me Section -->
-<section id="about" class="py-16 bg-gray-100 text-center" style=" background: lightblue;">
+<section id="about" class="py-16 bg-gray-400 text-white text-center">
   <div class="container mx-auto px-4">
     <h3 class="text-3xl font-bold mb-6">About Me</h3>
     <div class="profile-image-container">
-    <img src="img/01.png" alt="Imam Aliyu's pic" class="profile-image">
+    
     <p class="profile-name">Abdullahi Aliyu Imam</p>
 </div>
 
-    <p class="text-lg text-gray-700 max-w-3xl text-justify mx-auto">
-      Hi, I'm Abdullahi Aliyu Imam, a passionate web developer, software developer, and graphics designer. I specialize in crafting high-quality websites, applications, and visuals that not only meet client expectations but also enhance user experiences. With a keen eye for design and a strong understanding of coding, I blend creativity with technical expertise to bring ideas to life.
+    <p class="text-lg text-white max-w-3xl text-justify mx-auto">
+      Hi, I'm Aliyu Imam, a passionate web developer, software developer, and graphics designer. I specialize in crafting high-quality websites, applications, and visuals that not only meet client expectations but also enhance user experiences. With a keen eye for design and a strong understanding of coding, I blend creativity with technical expertise to bring ideas to life.
       <br><br>
       I have experience working with various technologies, including HTML, CSS, JavaScript, and React.js, allowing me to build responsive and dynamic web applications. Additionally, my background in graphics design empowers me to create visually appealing interfaces and engaging marketing materials.
       <br><br>
@@ -142,7 +130,7 @@
     <h3 class="text-3xl font-bold  mb-8">Projects</h3>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div class="bg-white p-6 rounded-lg shadow-lg">
-        <img src="my-portfolio/img/blue.png" alt="Project 1" class="rounded-lg mb-4">
+        <img src="img/blue.png" alt="Project 1" class="rounded-lg mb-4">
         <h4 class="font-bold">E-Commerce</h4>
         <p>An Ecommerce app built with React JS and Tailwind CSS.</p>
       </div>
@@ -188,7 +176,7 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-blue-800 text-white py-6" style="color: rgb(124,231,190)">
+<footer class="bg-black text-white py-6">
   <div class="container mx-auto px-4 text-center">
     <p>&copy; 2024 Aliyu Imam. All rights reserved.</p>
     <div class="flex justify-center space-x-4 mt-4">
@@ -201,8 +189,6 @@
     </div>
   </div>
 </footer>
-
-<!-- JavaScript for Hamburger Menu -->
 <script>
   const menuBtn = document.getElementById('menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
