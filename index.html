@@ -13,34 +13,56 @@
 <body class="bg-gray-50  font-sans">
 
 <!-- Hero Section -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aliyu Imam - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* CSS to handle smooth expand/collapse effect */
+    #menu {
+      transition: max-height 0.3s ease-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+<!-- Hero Section -->
 <div class="w-full h-full bg-black text-white">
-    <header class="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg">
-     <label for="menu-toggle" class="pointer-cursor md:hidden block">
-            <svg class="fill-current text-gray-200" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-            <title>menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-            </svg>
-            </label>
-        <div class="bg-black pl-2 ">
-          <h1 class="text-2xl font-semibold font-serif"> MY PORTFOLIO</h1>
-        </div>
+  <header class="lg:px-16 px-4 flex flex-wrap items-center py-4 shadow-lg">
+    <!-- Hamburger Icon -->
+    <label for="menu-toggle" class="pointer-cursor md:hidden block">
+      <svg class="fill-current text-gray-200" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+        <title>menu</title>
+        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+      </svg>
+    </label>
 
-       
-        <input class="hidden" type="checkbox" id="menu-toggle" />
+    <!-- Portfolio Title -->
+    <div class="bg-black pl-2">
+      <h1 class="text-2xl font-semibold font-serif"> MY PORTFOLIO</h1>
+    </div>
 
-        <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
-            <nav>
-                <ul class="md:flex items-center justify-between text-base text-gray-100 dark:text-gray-600 pt-4 md:pt-0">
-                    <li><a class="md:p-4 py-3 px-0 block text-rose-500" href="#">Home</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block" href="#">About Me</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block" href="#">Education</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block" href="#">Experience</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block" href="#">Projects</a></li>
-                    <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <!-- Hamburger Menu Toggle (Checkbox) -->
+    <input class="hidden" type="checkbox" id="menu-toggle" />
+
+    <!-- Navigation Menu -->
+    <div class="hidden md:flex md:items-center md:w-auto w-full" id="menu">
+      <nav>
+        <ul class="md:flex items-center justify-between text-base text-gray-100 dark:text-gray-600 pt-4 md:pt-0">
+          <li><a class="md:p-4 py-3 px-0 block text-rose-500" href="#">Home</a></li>
+          <li><a class="md:p-4 py-3 px-0 block" href="#">About Me</a></li>
+          <li><a class="md:p-4 py-3 px-0 block" href="#">Education</a></li>
+          <li><a class="md:p-4 py-3 px-0 block" href="#">Experience</a></li>
+          <li><a class="md:p-4 py-3 px-0 block" href="#">Projects</a></li>
+          <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
 
     <div
         class="h-screen w-full mx-auto py-20 xl:px-16 xs:px-8 flex md:flex-row xs:flex-col gap-4 justify-center items-center pb-515 pt-4">
@@ -190,18 +212,11 @@
   </div>
 </footer>
 <script>
-  const menuBtn = document.getElementById('menu-btn');
-  const mobileMenu = document.getElementById('mobile-menu');
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
 
-  menuBtn.addEventListener('click', () => {
-    // Toggle the max height for smooth expand/collapse effect
-    if (mobileMenu.classList.contains('max-h-0')) {
-      mobileMenu.classList.remove('max-h-0');
-      mobileMenu.classList.add('max-h-screen');
-    } else {
-      mobileMenu.classList.remove('max-h-screen');
-      mobileMenu.classList.add('max-h-0');
-    }
+  menuToggle.addEventListener('change', () => {
+    menu.classList.toggle('hidden');
   });
 </script>
 
