@@ -64,21 +64,27 @@
   </header>
 
 
-    <div
-        class="h-screen w-full mx-auto py-20 xl:px-16 xs:px-8 flex md:flex-row xs:flex-col gap-4 justify-center items-center pb-515 pt-4">
-        <div class="w-full">
-            <img class="rounded-full md:max-w-[70%] sm:max-w-[50%] xs:max-w-[60%] mx-auto" src="img/01.png" alt="My Image" />
-        </div>
-        <div class="w-full flex flex-col justify-center gap-4 text-white dark:text-white md:mt-0 sm:mt-8 xs:mt-4">
-            <h1 class="text-4xl font-semibold font-serif">Hello, My name is Abdullahi Aliyu Imam</h1>
-            <h3 class="capitalize text-rose-400">i'm <span class="typing text-green-500 dark:text-green-700">fullstack developer</span></h3>
-            <p>Experienced full-stack web developer with 4+ years of expertise in PHP, Javascript, React JS,
-                Graphics Design, Tailwind CSS and some Flutter experience.</p>
-            <div class="sm:mt-4 xs:mt-2">
-                <button class="px-6 py-1 bg-green-500 text-white hover:text-blue-600 hover:bg-green-900 rounded-sm">Get In Touch</button>
-            </div>
+<div
+    class="h-screen w-full mx-auto py-20 xl:px-16 xs:px-8 flex md:flex-row xs:flex-col gap-4 justify-center items-center relative pb-515 pt-4"
+    style="background-image: url('img/bg.jpg'); background-size: cover; background-position: center;">
+    
+    <!-- Overlay for better text visibility -->
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+
+    <div class="w-full relative z-10">
+        <img class="rounded-full md:max-w-[70%] sm:max-w-[50%] xs:max-w-[60%] mx-auto" src="img/01.png" alt="My Image" />
+    </div>
+    <div class="w-full flex flex-col justify-center gap-4 text-white dark:text-white md:mt-0 sm:mt-8 xs:mt-4 relative z-10">
+        <h1 class="text-4xl font-semibold font-serif text-yellow-300 drop-shadow-lg">Hello, My name is Abdullahi Aliyu Imam</h1>
+        <h3 class="capitalize text-rose-400 drop-shadow-lg">I'm <span class="typing text-green-500 dark:text-green-400">a Fullstack Developer</span></h3>
+        <p class="drop-shadow-lg">Experienced full-stack web developer with 4+ years of expertise in PHP, Javascript, React JS,
+            Graphics Design, Tailwind CSS, and some Flutter experience.</p>
+        <div class="sm:mt-4 xs:mt-2">
+            <button class="px-6 py-1 bg-green-500 text-white hover:text-blue-600 hover:bg-green-900 rounded-sm drop-shadow-lg">Get In Touch</button>
         </div>
     </div>
+</div>
+
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
@@ -92,7 +98,7 @@
 </script>
 
 <!-- About Me Section -->
-<section id="about" class="py-16 bg-gray-400 text-white text-center">
+<section id="about" class="py-16 bg-gray-50 text-black text-center">
   <div class="container mx-auto px-4">
     <h3 class="text-3xl font-bold mb-6">About Me</h3>
     <div class="profile-image-container">
@@ -100,7 +106,7 @@
     <p class="profile-name">Abdullahi Aliyu Imam</p>
 </div>
 
-    <p class="text-lg text-white max-w-3xl text-justify mx-auto">
+    <p class="text-lg max-w-3xl text-justify mx-auto">
       Hi, I'm Aliyu Imam, a passionate web developer, software developer, and graphics designer. I specialize in crafting high-quality websites, applications, and visuals that not only meet client expectations but also enhance user experiences. With a keen eye for design and a strong understanding of coding, I blend creativity with technical expertise to bring ideas to life.
       <br><br>
       I have experience working with various technologies, including HTML, CSS, JavaScript, and React.js, allowing me to build responsive and dynamic web applications. Additionally, my background in graphics design empowers me to create visually appealing interfaces and engaging marketing materials.
@@ -149,29 +155,85 @@
 <!-- Projects Section -->
 <section id="projects" class="py-16 bg-gray-50 text-center">
   <div class="container mx-auto px-6">
-    <h3 class="text-3xl font-bold  mb-8">Projects</h3>
+    <h3 class="text-3xl font-bold mb-8">Projects</h3>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="bg-white p-6 rounded-lg shadow-lg">
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-300">
         <img src="img/blue.png" alt="Project 1" class="rounded-lg mb-4">
         <h4 class="font-bold">E-Commerce</h4>
         <p>An Ecommerce app built with React JS and Tailwind CSS.</p>
+        <br>
+        <a href="https://blue-mountain-five.vercel.app/" class="font-medium text-blue-600 dark:text-blue-500 hover:text-blue-800 hover:underline"  target="_blank">Visit</a>
       </div>
 
-    </div>
-    
-  </div>
+       <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-300">
+        <img src="img/blue.png" alt="Project 1" class="rounded-lg mb-4">
+        <h4 class="font-bold">E-Commerce</h4>
+        <p>An Ecommerce app built with React JS and Tailwind CSS.</p>
+        <br>
+        <a href="https://blue-mountain-five.vercel.app/" class="font-medium text-blue-600 dark:text-blue-500 hover:text-blue-800 hover:underline"  target="_blank">Visit</a>
+      </div>
 
+      <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transform transition duration-300">
+        <img src="img/blue.png" alt="Project 1" class="rounded-lg mb-4">
+        <h4 class="font-bold">E-Commerce</h4>
+        <p>An Ecommerce app built with React JS and Tailwind CSS.</p>
+        <br>
+        <a href="https://blue-mountain-five.vercel.app/" class="font-medium text-blue-600 dark:text-blue-500 hover:text-blue-800 hover:underline"  target="_blank">Visit</a>
+      </div>
+    </div>
+  </div>
 </section>
+
 
 <!-- Achievements Section -->
 <section id="achievements" class="py-16 bg-gradient-to-r from-blue-100 to-gray-50 text-center">
   <div class="container mx-auto px-4">
     <h3 class="text-3xl font-bold  mb-8">Achievements & Certificates</h3>
-    <div class="flex flex-wrap justify-center space-x-4">
-      <p>• Web Developer Certification - The Axioms LTD</p>
-      <p>• JavaScript Mastery - Lexington Technologies</p>
-      <p>• Graphics Design - Flinix Technologies</p>
+    <section class="py-16 bg-gray-50">
+  <div class="container mx-auto px-6">
+    <h3 class="text-3xl font-bold text-center mb-8">Certifications</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105">
+        <div class="p-6">
+          <img src="img/code.png" alt="Certification 1" class="w-full h-48 object-contain mb-4">
+          <h4 class="text-xl font-semibold mb-2">Certification 1</h4>
+          <p class="text-gray-600">I received this certificate from code.org in it Hour of Code programme.</p>
+          <a href="img/code.png" target="_blank" class="inline-block mt-4 text-blue-600 font-medium hover:underline">
+            View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105">
+        <div class="p-6">
+          <img src="img/code.png" alt="Certification 1" class="w-full h-48 object-contain mb-4">
+          <h4 class="text-xl font-semibold mb-2">Certification 2</h4>
+          <p class="text-gray-600">I received this certificate from code.org in it Hour of Code programme.</p>
+          <a href="img/code.png" target="_blank" class="inline-block mt-4 text-blue-600 font-medium hover:underline">
+            View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-2xl transition duration-300 transform hover:scale-105">
+        <div class="p-6">
+          <img src="img/code.png" alt="Certification 1" class="w-full h-48 object-contain mb-4">
+          <h4 class="text-xl font-semibold mb-2">Certification 3</h4>
+          <p class="text-gray-600">I received this certificate from code.org in it Hour of Code programme.</p>
+          <a href="img/code.png" target="_blank" class="inline-block mt-4 text-blue-600 font-medium hover:underline">
+            View Certificate
+          </a>
+        </div>
+      </div>
+      
     </div>
+  </div>
+</section>
+
   </div>
 </section>
 
@@ -204,9 +266,9 @@
     <div class="flex justify-center space-x-4 mt-4">
       <a href="https://www.linkedin.com/in/abdullahi-aliyu-imam-46230332a" class="hover:text-white">LinkedIn</a>
       <a href="https://github.com/aliyuimam" class="hover:text-white">GitHub</a>
-      <a href="mailto:imamzaria07@gmail.com" class="hover:text-white">Email</a><br>
+      <a href="mailto:imamzaria07@gmail.com" class="hover:text-white">Email</a>
       <a href="https://www.instagram.com/aleeyu_imam07" class="hover:text-white">Instagram</a>
-      <a href="https://www.facebook.com/profile.php?id=100091886277584" class="hover:text-white">Facebook</a><br>
+      <a href="https://www.facebook.com/profile.php?id=100091886277584" class="hover:text-white">Facebook</a>
       <a href="https://x.com/AbdullahiA83949" class="hover:text-white">Twitter</a>
     </div>
   </div>
